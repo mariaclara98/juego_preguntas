@@ -1,0 +1,17 @@
+<aside class="bg-light sidebar">
+  <div class="p-4">      
+    <div class="card" style="text-align:center; border-radius: 20px;">
+      <p class="mt-2">Usuario Activo</p> <hr>
+      <div class="card-body">
+        <h5 class="card-title font-weight-bold">{{ user.first_name }} {{ user.last_name }}</h5>
+        <h6 class="card-title font-weight-bold">@{{ user.username }}</h6>
+        {% if user.is_authenticated %}
+        <!-- Botón de Editar Perfil -->
+        <a href="{% url 'edit_profile' %}" class="btn btn-primary btn-block mb-2">Editar Perfil</a>  <br>         
+        <!-- Botón de Eliminar Cuenta -->
+        <a href="{% url 'delete_account' %}" class="btn btn-danger btn-block">Eliminar Cuenta</a>
+        {% endif %}
+      </div>
+    </div>  
+  </div>
+</aside>

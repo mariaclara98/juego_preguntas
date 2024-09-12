@@ -1,0 +1,51 @@
+#header,#footer {
+    background-color: #96fffa !important; /* Color de fondo */
+    padding: 20px 0; /* Espacio superior e inferior */
+    border-bottom: 2px solid #ddd; /* Borde inferior para separación */
+}
+
+#header h1 {
+    font-size: 2.5rem; /* Tamaño del texto */
+    margin:3rem  0 2rem 0 ; /* Espacio debajo del título */    
+}
+
+#footer p{
+    font-size: 1.5rem; /* Tamaño del texto */
+    color: #333; ; /* Espacio debajo del título */    
+}
+.nav-link {
+    color: #333; /* Color del texto de los enlaces */
+    padding: 10px 15px; /* Espacio dentro de los enlaces */
+    font-weight: 500; /* Peso de la fuente para mejor visibilidad */
+}
+
+.nav-link:hover {
+    color: #0056b3; /* Color del texto al pasar el ratón */
+    background-color: #e2e6ea; /* Color de fondo al pasar el ratón */
+    border-radius: 5px; /* Esquinas redondeadas */
+}
+
+.btn-outline-primary {
+    border-color: #007bff; /* Color del borde del botón */
+    color: #007bff; /* Color del texto del botón */
+}
+
+.btn-outline-primary:hover {
+    background-color: #007bff; /* Color de fondo del botón al pasar el ratón */
+    color: #fff; /* Color del texto del botón al pasar el ratón */
+}
+
+.btn-link {
+    background-color: #f8f9fa; /* Fondo blanco para los botones de enlace */
+    border: 1px solid #dee2e6; /* Borde del botón */
+}
+
+.btn-link i {
+    font-size: 18px; /* Tamaño del ícono */
+    color: #007bff; /* Color del ícono */
+}
+
+.card-bg-gray {    
+    background-color: #f8f9fa; /* Fondo gris claro */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajusta los valores según tu preferencia */
+}

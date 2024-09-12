@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% load crispy_forms_tags %}
+
+
+<div class="row justify-content-center mt-2">
+    <div class="col-md-8">
+        <div class="card text-dark bg-light mb-3">
+            <div class="card-header"><h5 class="card-title">{{ pregunta.texto }}</h5></div>
+            <div class="card-body">
+                <form method="POST">
+                    {% csrf_token %}                    
+                    {% for respuesta in pregunta.respuestas.all %}
+                        <input type="radio" name="respuesta" value="{{ respuesta.id }}" required class="my-2"> {{ respuesta.texto }}<br>
+                    {% endfor %}                    
+                    <button type="submit" class="btn-primary my-2">Siguiente</button>
+                </form>
+            </div>
+          </div>
+        
+    </div>
+</div>
+
+{% endblock %}
+
+
+

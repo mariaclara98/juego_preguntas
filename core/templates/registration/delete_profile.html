@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<form method="POST">
+    {% csrf_token %}
+    <p>¿Estás seguro de que deseas eliminar tu cuenta? Esta acción es irreversible y todos tus posts serán eliminados.</p>
+    <button type="submit" class="btn btn-danger">Eliminar cuenta</button>
+    <a href="{% url 'home' %}" class="btn btn-secondary">Cancelar</a>
+</form>
+
+{% endblock content %}

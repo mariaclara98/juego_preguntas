@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}    
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h2 class="h2">Bienvenido</h2>
+    </div>    
+        <div class="container">
+            <h1>¡Bienvenido a <span >¿Quién Quiere Ser Millonario?</span></h1>
+            <p class="my-5">¿Tienes lo que se necesita para llegar a la cima?</p>
+            <a href="{% url 'jugar' %}" class="btn btn-danger mb-5">Comenzar a Jugar</a>
+        </div>
+
+        <div class="container">
+            <h2>¿Cómo Funciona el Juego?</h2>
+            <div class="row mt-5">
+                <div class="col-md-4">
+                    <div class="card feature-card">
+                        <div class="feature-icon">
+                            <i class="bi bi-question-circle"></i>
+                        </div>
+                        <h5>Responde Preguntas</h5>
+                        <p>Responde a preguntas de opción múltiple para ganar puntos. ¡Solo una respuesta es correcta!</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card">
+                        <div class="feature-icon">
+                            <i class="bi bi-trophy"></i>
+                        </div>
+                        <h5>Gana Puntos</h5>
+                        <p>Cada respuesta correcta te acerca a ser el nuevo millonario. ¿Podrás ganar la máxima puntuación?</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card">
+                        <div class="feature-icon">
+                            <i class="bi bi-people"></i>
+                        </div>
+                        <h5>Comparte tus Logros</h5>
+                        <p>Inicia sesión para guardar tus intentos y comparar tus resultados con otros jugadores.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+{% endblock content %}

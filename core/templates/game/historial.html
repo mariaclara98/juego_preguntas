@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}    
+    <h2>Historial de Partidas</h2>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Fecha</th>
+            <th scope="col">Puntuación</th>
+            <th scope="col">Aciertos</th>
+            <th scope="col">Fallos</th>
+          </tr>
+        </thead>
+        <tbody>
+            {% for intento in intentos %}
+            <tr>
+                <th scope="row">{{forloop.counter}}</th>
+                <td>{{ intento.fecha }}</td>
+                <td>{{ intento.puntuacion }}</td>
+                <td>{{ intento.aciertos }}</td>
+                <td>{{ intento.fallos }}</td>
+            </tr>                
+            {% endfor %}
+        </tbody>
+      </table>
+{% endblock content %}
+
+
+
